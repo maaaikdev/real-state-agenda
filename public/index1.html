@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="bg-gray-light validate-box">
+        <div class="go-back roboto-regular">
+            <img src="assets/icons/arrow-left.svg" alt="go back" />
+            Volver
+        </div>
+        <div class="address-validate">
+            <h2>¡Vamos a validar tu dirección!</h2>
+            <form class="form" id="AddressForm">
+                <h3>Datos personales</h3>
+                <div class="col-3">
+                    <div class="form-input">
+                        <div class="label-box">
+                            <input type="text" name="dni" id="dni" required>
+                            <label class="label-name">
+                                <span class="text-label roboto-regular">Número de DNI</span>
+                            </label>
+                        </div>
+                        <div class="icon-box">
+                            <img src="assets/icons/id-card-light.svg" />
+                        </div>                        
+                    </div>
+                    <div class="form-input">
+                        <div class="label-box">
+                            <input type="text" name="phone" id="phone" required>
+                            <label class="label-name">
+                                <span class="text-label roboto-regular">Número de celular</span>
+                            </label>
+                        </div>
+                        <div class="icon-box">
+                            <img src="assets/icons/phone.svg" />
+                        </div>                        
+                    </div>
+                    <div class="form-input">
+                        <div class="label-box">
+                            <input type="text" name="email" id="email" required>
+                            <label class="label-name">
+                                <span class="text-label roboto-regular">Email</span>
+                            </label>
+                        </div>
+                        <div class="icon-box">
+                            <img src="assets/icons/email-light.svg" />
+                        </div>                        
+                    </div>
+                </div>
+                <h3>Información domicilio</h3>
+                <div class="col-3">
+                    <div class="form-select">
+                        <div class="select">
+                            <select class="select-text" name="department" id="department" required>
+                                <option value="" selected class="option-text"></option>
+                                <option value="Lima" class="option-text">Lima</option>
+                                <option value="Cusco" class="option-text">Cusco</option>
+                                <option value="Huaraz" class="option-text">Huaraz</option>
+                            </select>
+                            <span class="select-bar"></span>
+                            <label class="select-label">Departamento</label>
+                        </div>
+                    </div>
+                    <div class="form-select">
+                        <div class="select">
+                            <select class="select-text" name="city" id="city" required>
+                                <option value="" selected class="option-text"></option>
+                                <option value="Lima" class="option-text">Lima</option>
+                                <option value="Cusco" class="option-text">Cusco</option>
+                                <option value="Huaraz" class="option-text">Huaraz</option>
+                            </select>
+                            <span class="select-bar"></span>
+                            <label class="select-label">Ciudad</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div class="label-box">
+                            <input type="text" name="municipalities" id="municipalities" required>
+                            <label class="label-name">
+                                <span class="text-label roboto-regular">Municipios</span>
+                            </label>
+                        </div>
+                        <div class="icon-box">
+                            <img src="assets/icons/pin-light.svg" />
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-select">
+                        <div class="select">
+                            <select class="select-text" name="department" id="department" required>
+                                <option value="" selected class="option-text"></option>
+                                <option value="apartado-aereo" class="option-text">Apartado aéreo</option>
+                                <option value="autopista" class="option-text">Autopista</option>
+                                <option value="avenida" class="option-text">Avenida</option>
+                                <option value="avenida-calle" class="option-text">Avenida calle</option>
+                                <option value="avenida-carrera" class="option-text">Avenida carrera</option>
+                                <option value="calle" class="option-text">Calle</option>
+                                <option value="diagonal" class="option-text">Diagonal</option>
+                                <option value="kilometro" class="option-text">Kilometro</option>                                
+                                <option value="transversal" class="option-text">Transversal</option>
+                                <option value="otro" class="option-text">otro</option>
+                            </select>
+                            <span class="select-bar"></span>
+                            <label class="select-label">Tipo de dirección</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div class="label-box">
+                            <input type="text" name="numero-via-principal" id="numero-via-principal" required>
+                            <label class="label-name">
+                                <span class="text-label roboto-regular">Número vía principal</span>
+                            </label>
+                        </div>
+                        <div class="icon-box">
+                            <img src="assets/icons/pin-light.svg" />
+                        </div>                        
+                    </div>
+                    <div class="form-input">
+                        <div class="label-box">
+                            <input type="text" name="numero-via-secundaria" id="numero-via-secundaria" required>
+                            <label class="label-name">
+                                <span class="text-label roboto-regular">Número vía secundaria</span>
+                            </label>
+                        </div>
+                        <div class="icon-box">
+                            <img src="assets/icons/pin-light.svg" />
+                        </div>                        
+                    </div>
+                    <div class="form-input">
+                        <div class="label-box">
+                            <input type="text" name="placa" id="placa" required>
+                            <label class="label-name">
+                                <span class="text-label roboto-regular">Placa</span>
+                            </label>
+                        </div>
+                        <div class="icon-box">
+                            <img src="assets/icons/pin-light.svg" />
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="form-input">
+                        <div class="label-box">
+                            <input type="text" name="complements" id="complements" required>
+                            <label class="label-name">
+                                <span class="text-label roboto-regular">Complementos</span>
+                            </label>
+                        </div>
+                        <div class="icon-box">
+                            <img src="assets/icons/question.svg" alt="Dirección" />
+                        </div>                        
+                    </div>
+                </div>                
+                <div class="box-content col-1-btn">
+                    <button 
+                        class='btn-primary roboto-medium disabled'
+                        type="submit" 
+                        id="sendBtn" 
+                        disabled
+                    >
+                        Guardar dirección
+                    </button>
+                </div>
+            </form>
+        </div>        
+    </section>
+    <script>
+        const inputsField = document.querySelectorAll(".label-box");
+
+        for(i = 0; inputsField.length > i; i++){
+            const input = inputsField[i]
+            if(input.clientWidth < 120) {
+                input.children[1].children[0].classList.add("truncate")
+            } else {
+                input.children[1].children[0].classList.remove("truncate");                
+            }
+        }
+    </script>
+    <script>
+        const form = document.getElementById('AddressForm');
+
+        const dni = document.getElementById('dni');
+        const phone = document.getElementById('phone');
+        const department = document.getElementById('department');
+        const province = document.getElementById('province');
+        const district = document.getElementById('district');
+        const address = document.getElementById('address');
+
+        const submitButton = document.getElementById('sendBtn');       
+
+        function areFieldsValid() {
+            return (
+                dni.value.trim() !== '' &&
+                phone.value &&
+                department.value !== '' &&
+                province.value !== '' &&
+                district.value !== '' &&
+                address.value.trim() !== ''
+            );
+        }
+
+        function toggleSubmitButton() {
+            submitButton.disabled = !areFieldsValid();
+            if(!areFieldsValid()) {
+                submitButton.classList.add('disabled')
+            } else {
+                submitButton.classList.add('enabled')
+            }
+        }
+
+        dni.addEventListener('input', toggleSubmitButton);
+        phone.addEventListener('input', toggleSubmitButton);
+        department.addEventListener('change', toggleSubmitButton);
+        province.addEventListener('change', toggleSubmitButton);
+        district.addEventListener('change', toggleSubmitButton);
+        address.addEventListener('input', toggleSubmitButton);
+
+        console.log('areFieldsValid', areFieldsValid())
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); 
+
+            if (areFieldsValid()) {
+                const formData = {
+                    dni: dni.value,
+                    phone: phone.value,
+                    department: department.value,
+                    province: department.value,
+                    district: department.value,
+                    address: address.value
+                };
+                console.log('Form Data:', formData);
+                window.open("successful-registration.html", '_self');
+            } else {
+                alert('Please fill in all fields correctly.');
+            }
+        });
+    </script>
+</body>
+</html>

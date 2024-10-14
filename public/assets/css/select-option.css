@@ -1,0 +1,105 @@
+.form-select {
+    position: relative;
+    height: 56px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #fff;
+    justify-content: space-between;
+}
+.form-select:focus-within {
+    border: 1px solid #019DF4;
+}
+
+.select {
+    position: relative;
+}  
+.select-text {
+    position: relative;
+    font-family: inherit;
+    width: 100%;
+    padding: 26px 10px 10px 14px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #313235;
+    font-size: 16px;
+    border: 1px solid #999999;
+}
+.select-text option {
+    background-color: white;
+}
+.select-text:focus {
+    outline: none;
+    border: 1px solid #019DF4;
+}  
+.select .select-text {
+    appearance: none;
+    -webkit-appearance:none
+}  
+.select:after {
+    position: absolute;
+    bottom: 24px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #50535A;
+    pointer-events: none;
+}
+.select-label {
+    color: #737578;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 14px;
+    bottom: 2px;
+    transition: 0.2s ease all;
+    transform: translate(0%, -90%);
+    -webkit-transform: translate(0%, -90%);
+    -moz-transform: translate(0%, -90%);
+    -ms-transform: translate(0%, -90%);
+    -o-transform: translate(0%, -90%);
+}
+.select-label:focus {
+    /* font-size: 16px; */
+}
+.select-text:focus ~ .select-label, .select-text:valid ~ .select-label {
+    color: #019DF4;
+    bottom: 24px;
+    transition: 0.2s ease all;
+    font-size: 12px;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+}
+.select-bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.select-bar:before {
+    left: 50%;
+}
+.select-bar:after {
+    right: 50%;
+}  
+.select-text:focus ~ .select-bar:before, .select-text:focus ~ .select-bar:after {
+    width: 50%;
+}
+.select-highlight {
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+.option-text {
+    font-size: 14px;
+}
+/* Select Field */
