@@ -5,10 +5,9 @@ class AdminController {
     public function handleRequest() {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Obtener los valores del formulario
-            $firstName = isset($_POST['first-name']) ? $_POST['first-name'] : '';
-            $lastName = isset($_POST['last-name']) ? $_POST['last-name'] : '';
-            $email = isset($_POST['email']) ? $_POST['email'] : '';
+            $names = isset($_POST['names']) ? $_POST['names'] : '';
             $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+            $email = isset($_POST['email']) ? $_POST['email'] : '';
 
             // Ruta al archivo JSON
             $jsonFile = '../../data/data-form.json';
@@ -25,10 +24,9 @@ class AdminController {
 
             // Añadir los nuevos datos al array
             $datos[] = [
-                'first_name' => $firstName,
-                'last_name' => $lastName,
-                'email' => $email,
+                'names' => $names,
                 'phone' => $phone,
+                'email' => $email,
             ];
 
             // Codificar los datos actualizados a formato JSON
@@ -46,7 +44,7 @@ class AdminController {
                 exit(); // Detener la ejecución
             } else {
                 // Si la operación fue exitosa, redirigir al usuario
-                $this->downloadPDF('mi-agenda-inteligente-1.pdf');
+                $this->downloadPDF('mi-agenda-inteligente.pdf');
                 //$this->redirect('../view/ViewUser.php');
             }
         }

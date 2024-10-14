@@ -50,10 +50,9 @@
                             <div class="column-head">Número de teléfono</div>
                         </div>
                         <div class="row">
-                            <div class="data-user"><?= $user['first_name'] ?></div>
-                            <div class="data-user"><?= $user['last_name'] ?></div>
-                            <div class="data-user"><?= $user['email'] ?></div>
+                            <div class="data-user"><?= $user['names'] ?></div>
                             <div class="data-user"><?= $user['phone'] ?></div>
+                            <div class="data-user"><?= $user['email'] ?></div>
                         </div>
                     </div>
                 <?php endforeach; ?>

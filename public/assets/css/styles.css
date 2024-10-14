@@ -253,6 +253,11 @@
 }
 
 /* Fonts */
+.roboto-extralight {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}  
 .roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -275,5 +280,6 @@
 }
 
 .bg-blue-dark-agenda {
-    background-color: #25344d;
+    /* background-color: #25344d; */
+    background-color: #15202e;
 }
