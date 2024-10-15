@@ -51,7 +51,8 @@
                 <div class="space-y-12">
                     <div class="pb-3">
                         <!-- <h2 class="text-base font-semibold leading-7 text-gray-900">Personal Information</h2> -->
-                        <h2 class="roboto-extralight text-xl lg:text-3xl mt-1 text-white leading-7 lg:leading-10">Descarga tu mapa de Acción Rápida con los <strong class="roboto-medium">9 pasos clave ahora mismo.</strong></h2>
+                        <!-- <h2 class="roboto-extralight text-xl lg:text-3xl mt-1 text-white leading-7 lg:leading-10">Descarga tu mapa de Acción Rápida con los <strong class="roboto-medium">9 pasos clave ahora mismo.</strong></h2> -->
+                         <h2 class="roboto-extralight text-xl lg:text-3xl mt-1 text-white leading-7 lg:leading-10">¡Aquí está tu regalo! <br /><strong class="roboto-medium">Obtén información valiosa de la edición 2024.</strong></h2>
                         <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-4 lg:gap-y-8 sm:grid-cols-6">
                             <div class="col-span-full">
                                 <label for="names" class="block text-sm font-medium leading-6 text-white">Nombre y Apellido</label>
@@ -89,7 +90,7 @@
 
                 <div class="mt-6 flex items-center justify-end gap-x-6">
                     <!-- <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button> -->
-                    <button type="submit" id="submitRealStateAgenda" class="bg-gray-400 text-white font-bold py-2 px-6 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:bg-gray-300 disabled:cursor-not-allowed" disabled>Descargar agenda</button>
+                    <button type="submit" id="submitRealStateAgenda" class="bg-gray-400 text-white font-bold py-2 px-6 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:bg-gray-300 disabled:cursor-not-allowed" disabled>Descargar gratuita</button>
                 </div>
             </form>
             <!-- Mensaje de éxito -->
