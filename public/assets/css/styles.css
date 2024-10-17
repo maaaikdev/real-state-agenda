@@ -86,16 +86,17 @@
 }
 .view-users {
     padding: 24px;
-    width: 85%;
+    width: 70%;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    margin-top: 24px;
 }
 .view-users h2 {
-    font-size: 2.5rem;
-    line-height: 48px;
+    font-size: 2rem;
+    line-height: 38px;
     color: #313235;
     margin-bottom: 32px;
     font-weight: inherit;
@@ -178,7 +179,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 .mb-0 {
     margin-bottom: 0!important;

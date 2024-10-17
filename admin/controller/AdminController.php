@@ -27,6 +27,7 @@ class AdminController {
                 'names' => $names,
                 'phone' => $phone,
                 'email' => $email,
+                'dateCreated' => date('Y-m-d')
             ];
 
             // Codificar los datos actualizados a formato JSON

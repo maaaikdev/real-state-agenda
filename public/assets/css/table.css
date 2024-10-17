@@ -12,19 +12,25 @@
     .table-users .t-responsive {
         display: grid;
         grid-template-columns: 35% 65%;
-        border-top: 10px solid #ccc;
+        border-bottom: 10px solid #ebebeb;
     }
-    .table-users .t-responsive:first-child{
-        border-top: none;
-    }
+    .table-users .t-responsive:last-child{
+        border-bottom: none;
+    }    
     .table-users .t-responsive .head {
         display: flex;
         flex-direction: column;
     }
+    .table-users .head:last-child {
+        border-bottom: none;
+    }
     .table-users .t-responsive .head .column-head{
         text-align: left;
         width: 100%;
-        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    .table-users .t-responsive .head .column-head:last-child {
+        border-bottom: none;
     }
     .table-users .t-responsive .row {
         display: flex;
@@ -35,6 +41,10 @@
     .table-users .t-responsive .row .data-user{
         text-align: left;
         width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+    .table-users .t-responsive .row .data-user:last-child {
+        border-bottom: none;
     }
 }
 
@@ -45,10 +55,12 @@
     align-items: center;
     text-align: center;
     grid-template-columns: 
-    minmax(120px, 1fr)
-    minmax(120px, 1.67fr)
-    minmax(200px, 1.67fr)
-    minmax(120px, 1.67fr);
+    minmax(120px, 1fr)    /* Nombre */
+    minmax(120px, 1.67fr) /* Teléfono */
+    minmax(200px, 1.67fr) /* Email */
+    minmax(160px, 1fr)    /* Fecha de Creación */
+    minmax(120px, 0.5fr); /* Acciones */
+    border-bottom: 1px solid #ccc;
 }
 
 .table-users .head .column-head {
@@ -63,24 +75,42 @@
 
 .table-users .row  {
     display: grid;
-    /* grid-template-columns: repeat(10, 120px); */
-    /* grid-gap: 16px; */
     align-items: center;
     text-align: center;
     grid-template-columns: 
-    minmax(120px, 1fr)
-    minmax(120px, 1.67fr)
-    minmax(200px, 1.67fr)
-    minmax(120px, 1.67fr);
+        minmax(120px, 1fr)    /* Nombre */
+        minmax(120px, 1.67fr) /* Teléfono */
+        minmax(200px, 1.67fr) /* Email */
+        minmax(160px, 1fr)    /* Fecha de Creación */
+        minmax(120px, 0.5fr); /* Acciones */
+    border-bottom: 1px solid #ccc;
 }
+/* .table-users .t-responsive .row:last-child {
+    border-bottom: none;
+} */
 
 .table-users .row .data-user {
     padding: 16px 8px;
     font-size: 14px;
     color: #737578;
-    border-top: 1px solid #ccc;
 }
 
 .table-users .row .data-user.email{
     width: 200px;
+}
+
+.hidden {
+    display: none!important;
+}
+
+.btn-delete {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 16px 8px;
+}
+.btn-delete i {
+    width: 20px;
+    height: 20px;
+    color: red; /* Color del icono */
 }
